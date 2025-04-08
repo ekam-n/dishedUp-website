@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>dishedUp | Home</title>
-  <!-- Google Fonts: Londrina Solid for logo, Fira Sans for body text -->
+  <title>dishedUp | Our Story</title>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Londrina+Solid&display=swap" rel="stylesheet">
-  <!-- Link to your compiled Tailwind CSS output -->
+  <!-- Tailwind CSS -->
   <link rel="stylesheet" href="src/output.css" />
   <style>
     body {
@@ -27,7 +27,6 @@
         <a href="our-story.html" class="text-gray-800 hover:text-indigo-600 font-medium">Our Story</a>
         <a href="our-product.html" class="text-gray-800 hover:text-indigo-600 font-medium">Our Product</a>
       </nav>
-      <!-- Mobile Menu Button -->
       <button id="menu-toggle" class="md:hidden focus:outline-none">
         <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -45,43 +44,20 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-20" style="background-image: url('https://source.unsplash.com/1600x900/?cooking'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black opacity-60"></div>
-    <div class="relative max-w-7xl mx-auto px-4 py-32 text-center">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-white">Gamify Your Cooking Journey</h1>
-      <p class="mt-6 text-xl md:text-2xl text-gray-200">
-        Interactive quests, hands-free tutorials, personalized learning, leaderboards, and more for intro cooks.
-      </p>
-      <a href="our-product.html" class="mt-8 inline-block px-10 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">
-        Get Started
-      </a>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <main class="max-w-7xl mx-auto px-4 py-16">
-    <section>
-      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Key Features</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-lg shadow p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Interactive Quests</h3>
-          <p class="mt-2 text-gray-600">
-            Embark on cooking challenges that guide you through every recipe step-by-step.
-          </p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Hands-Free Tutorials</h3>
-          <p class="mt-2 text-gray-600">
-            Use voice commands to navigate lessons and get real-time guidance in the kitchen.
-          </p>
-        </div>
-        <div class="bg-white rounded-lg shadow p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Leaderboard & More</h3>
-          <p class="mt-2 text-gray-600">
-            Track your progress, compete with friends, and master new cuisines.
-          </p>
-        </div>
+  <!-- Our Story Content -->
+  <main class="max-w-7xl mx-auto px-4 py-24">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Our Story</h1>
+        <p class="mt-6 text-lg text-gray-600">
+          Born out of the need to empower intro cooks, dishedUp was created to make cooking fun and accessible. Our team—Sabrina, Khushy, and Ekam—designed an app that gamifies your culinary journey by providing interactive quests, personalized tutorials, and even voice-enabled navigation.
+        </p>
+        <p class="mt-4 text-lg text-gray-600">
+          Whether you’re a busy professional, an overworked student, or a multitasking parent, our app helps you organize weekly healthy meals and grocery plans, gain confidence in the kitchen, and explore new recipes with a twist.
+        </p>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/600x400/?cooking,story" alt="Our Story Image" class="rounded-md shadow-lg">
       </div>
     </section>
   </main>
@@ -93,7 +69,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript: Mobile Menu Toggle -->
+  <!-- Mobile Menu Toggle Script -->
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
