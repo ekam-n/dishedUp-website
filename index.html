@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>dishedUp | Home</title>
-  <!-- Google Fonts: Londrina Solid for logo, Fira Sans for body text -->
+  <!-- Google Fonts: Londrina Solid for the logo, Fira Sans for the body text -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Londrina+Solid&display=swap" rel="stylesheet">
   <!-- Link to your compiled Tailwind CSS output -->
   <link rel="stylesheet" href="src/output.css" />
@@ -18,16 +18,16 @@
   </style>
 </head>
 <body class="bg-gray-100">
+
   <!-- Header -->
   <header class="bg-white fixed w-full z-50 shadow">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-3xl font-extrabold text-indigo-600 logo">dishedUp</a>
+      <a href="index.html" class="text-3xl font-regular text-[#E98800] logo">dishedUp</a>
       <nav class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-gray-800 hover:text-indigo-600 font-medium">Home</a>
-        <a href="our-story.html" class="text-gray-800 hover:text-indigo-600 font-medium">Our Story</a>
-        <a href="our-product.html" class="text-gray-800 hover:text-indigo-600 font-medium">Our Product</a>
+        <a href="index.html" class="text-gray-800 hover:text-[#9F5D00] font-medium">Home</a>
+        <a href="our-product.html" class="text-gray-800 hover:text-[#9F5D00] font-medium">Our Product</a>
+        <a href="our-story.html" class="text-gray-800 hover:text-[#9F5D00] font-medium">Our Story</a>
       </nav>
-      <!-- Mobile Menu Button -->
       <button id="menu-toggle" class="md:hidden focus:outline-none">
         <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -38,28 +38,44 @@
     <!-- Mobile Navigation -->
     <nav id="mobile-menu" class="md:hidden hidden bg-white shadow">
       <div class="px-4 py-4 space-y-2">
-        <a href="index.html" class="block text-gray-800 hover:text-indigo-600">Home</a>
-        <a href="our-story.html" class="block text-gray-800 hover:text-indigo-600">Our Story</a>
-        <a href="our-product.html" class="block text-gray-800 hover:text-indigo-600">Our Product</a>
+        <a href="index.html" class="block text-gray-800 hover:text-[#9F5D00]">Home</a>
+        <a href="our-story.html" class="block text-gray-800 hover:text-[#9F5D00]">Our Story</a>
+        <a href="our-product.html" class="block text-gray-800 hover:text-[#9F5D00]">Our Product</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-20" style="background-image: url('https://source.unsplash.com/1600x900/?cooking'); background-size: cover; background-position: center;">
-    <div class="absolute inset-0 bg-black opacity-60"></div>
-    <div class="relative max-w-7xl mx-auto px-4 py-32 text-center">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-white">Gamify Your Cooking Journey</h1>
-      <p class="mt-6 text-xl md:text-2xl text-gray-200">
-        Interactive quests, hands-free tutorials, personalized learning, leaderboards, and more for intro cooks.
-      </p>
-      <a href="our-product.html" class="mt-8 inline-block px-10 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">
-        Get Started
-      </a>
+  <!-- Hero Section: Two-Column Layout with Phone Mockup -->
+  <section class="relative pt-20 bg-indigo-50">
+    <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Text and Button (First on mobile, Second on md) -->
+      <div class="order-1 md:order-2 text-center md:text-left mb-12 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">
+          Gamify Your Cooking Journey
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+          With interactive quests, hands-free tutorials, and personalized learning paths, learn to cook healthy, tasty meals while having fun.
+        </p>
+        <a href="https://cloud.protopie.io/p/29618e4fe3b5a6107042e269" class="mt-8 inline-block px-8 py-3 bg-[#E98800] text-white font-semibold rounded-md hover:bg-[#9F5D00] transition">
+          Try It Out
+        </a>
+      </div>
+      
+      <!-- Phone Mockup with Border Overlay on Video (Second on mobile, First on md) -->
+      <div class="order-2 md:order-1 relative w-64 md:w-80 bg-gray-200 shadow-2xl overflow-hidden rounded-4xl mx-auto">
+        <video class="w-full h-full object-cover" autoplay muted loop>
+          <source src="assets/SplashAnimation.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Border overlay -->
+        <div class="absolute inset-0 pointer-events-none rounded-4xl border-8 border-black"></div>
+      </div>
     </div>
   </section>
 
-  <!-- Features Section -->
+
+
+  <!-- Features Section (As before) -->
   <main class="max-w-7xl mx-auto px-4 py-16">
     <section>
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Key Features</h2>
@@ -67,19 +83,19 @@
         <div class="bg-white rounded-lg shadow p-6">
           <h3 class="text-xl font-semibold text-gray-800">Interactive Quests</h3>
           <p class="mt-2 text-gray-600">
-            Embark on cooking challenges that guide you through every recipe step-by-step.
+            Complete cooking challenges that guide you step-by-step through recipes.
           </p>
         </div>
         <div class="bg-white rounded-lg shadow p-6">
           <h3 class="text-xl font-semibold text-gray-800">Hands-Free Tutorials</h3>
           <p class="mt-2 text-gray-600">
-            Use voice commands to navigate lessons and get real-time guidance in the kitchen.
+            Use voice commands for easy, distraction-free learning in the kitchen.
           </p>
         </div>
         <div class="bg-white rounded-lg shadow p-6">
-          <h3 class="text-xl font-semibold text-gray-800">Leaderboard & More</h3>
+          <h3 class="text-xl font-semibold text-gray-800">Leaderboard & Social</h3>
           <p class="mt-2 text-gray-600">
-            Track your progress, compete with friends, and master new cuisines.
+            Track your progress, compete with friends, and celebrate culinary victories.
           </p>
         </div>
       </div>
@@ -87,9 +103,9 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900">
+  <footer class="bg-[#E98800]">
     <div class="max-w-7xl mx-auto px-4 py-8 text-center">
-      <p class="text-gray-500">© 2025 dishedUp. All rights reserved.</p>
+      <p class="text-white">© 2025 dishedUp. All rights reserved.</p>
     </div>
   </footer>
 
